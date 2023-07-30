@@ -13,7 +13,7 @@
   - A função responsável (projeto .NET) é a `VapidHelper.GenerateVapidKeys()`
   - Basta executar essa função uma única vez, obter o retorno via console e utilizar via variáveis de ambiente da sua aplicação Back-End.
 5. No Back-End, há um endpoint ('subscriber/:key') para salvar os dados de cada subscription para que seja possível enviar as notificações posteriormente (neste exemplo, foi usada uma classe para simular o banco de dados).
-6. No Back-End, há um endpoint ('push/:key') para simular o envio de um Push Notification. Neste endpoint, é retornada a subscription referente àquela determinada 'key' e, assim, cria a mensagem a ser enviada.
+6. No Back-End, há um endpoint ('push/:key') para simular o envio de um Push Notification. Neste endpoint, é solicitada a subscription referente àquela determinada 'key' para, assim, criar a mensagem e enviá-la para o client correspondente.
 7. Após o envio, a aplicação Front-End recebe essa notificação via service-worker e notifica o usuário (mesmo se o usuário não tiver acessando-a naquele momento).
 
 ## Observações
