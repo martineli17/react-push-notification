@@ -2,6 +2,7 @@
 <p>Quando se trata de Push Notification, existem alguns serviços cloud que realizam essa tarefa.</p>
 <p>Dentro desse cenário, é comum encontrarmos diversos serviços cloud que realizam essa tarefa, porém é necessário configurá-lo e, em alguns casos, pagar pelo memso.</p>
 <p>No entanto, existe uma solução alternativa gratuita que pode ser utilizada para Push Notification, utilizando recursos da própria Web.</p>
+<p>O Push Manager, por baixo, utiliza o Firebase para realizar o envio e recebimento das notificações. Mas, como mostrado neste exemplo, a criação da infraestrutura é automática. </p>
 
 ## Como usar
 1. Na aplicação Front-End, é necessário, primeiro, criar um service-worker para registrar o serviço background responsável por processar as notificações. [Arquivo](https://github.com/martineli17/react-push-notification/blob/master/front/public/services-works/notification.js) 
